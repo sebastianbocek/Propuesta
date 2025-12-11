@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)file:///C:/Users/seba_/OneDrive/Escritorio/Propuesta%20-%20Agente%20IA.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Propuesta - Recepcionista IA (WhatsApp)</title>
+
+  <!-- Tailwind CDN (para prototipo rápido) -->
+  <script src="./Propuesta - Recepcionista IA (WhatsApp)_files/saved_resource"></script>
+
+  <!-- Lucide icons (UMD) -->
+  <script src="./Propuesta - Recepcionista IA (WhatsApp)_files/lucide.min.js.descarga"></script>
+
+  <style>
+    /* Pequeños ajustes para que las tarjetas tengan mejor aspecto en móvil/whatsapp preview */
+    body { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+    .card-hover:hover { transform: translateY(-4px); transition: all .18s ease; }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.flex{display:flex}.grid{display:grid}.h-10{height:2.5rem}.h-12{height:3rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-auto{width:auto}.max-w-5xl{max-width:64rem}.flex-shrink-0{flex-shrink:0}.list-none{list-style-type:none}.items-start{align-items:flex-start}.items-center{align-items:center}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-4{border-width:4px}.border-l-4{border-left-width:4px}.border-green-200{--tw-border-opacity:1;border-color:rgb(187 247 208 / var(--tw-border-opacity, 1))}.border-purple-500{--tw-border-opacity:1;border-color:rgb(168 85 247 / var(--tw-border-opacity, 1))}.bg-purple-50{--tw-bg-opacity:1;background-color:rgb(250 245 255 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.bg-white\/95{background-color:rgb(255 255 255 / 0.95)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-blue-500{--tw-gradient-from:#3b82f6 var(--tw-gradient-from-position);--tw-gradient-to:rgb(59 130 246 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-green-50{--tw-gradient-from:#f0fdf4 var(--tw-gradient-from-position);--tw-gradient-to:rgb(240 253 244 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-green-500{--tw-gradient-from:#22c55e var(--tw-gradient-from-position);--tw-gradient-to:rgb(34 197 94 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-600{--tw-gradient-from:#9333ea var(--tw-gradient-from-position);--tw-gradient-to:rgb(147 51 234 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-slate-900{--tw-gradient-from:#0f172a var(--tw-gradient-from-position);--tw-gradient-to:rgb(15 23 42 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-purple-900{--tw-gradient-to:rgb(88 28 135 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #581c87 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-blue-700{--tw-gradient-to:#1d4ed8 var(--tw-gradient-to-position)}.to-emerald-50{--tw-gradient-to:#ecfdf5 var(--tw-gradient-to-position)}.to-emerald-600{--tw-gradient-to:#059669 var(--tw-gradient-to-position)}.to-pink-600{--tw-gradient-to:#db2777 var(--tw-gradient-to-position)}.to-slate-900{--tw-gradient-to:#0f172a var(--tw-gradient-to-position)}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.italic{font-style:italic}.text-blue-100{--tw-text-opacity:1;color:rgb(219 234 254 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-purple-600{--tw-text-opacity:1;color:rgb(147 51 234 / var(--tw-text-opacity, 1))}.text-purple-700{--tw-text-opacity:1;color:rgb(126 34 206 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/90{color:rgb(255 255 255 / 0.9)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}}</style></head>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-6">
+
+  <div class="max-w-5xl mx-auto space-y-8">
+
+    <!-- Header -->
+    <section class="bg-white/95 backdrop-blur rounded-2xl p-6 shadow-2xl border-4 border-purple-500">
+      <div class="flex items-center gap-3 mb-3">
+        <i data-lucide="zap" class="w-10 h-10 text-purple-600"></i>
+		<img src="https://i.imgur.com/6ZWYHnf.png" alt="Logo" class="h-12 w-auto">
+        <h1 class="text-3xl md:text-4xl font-bold text-slate-900">PROPUESTA OFICIAL</h1>
+      </div>
+      <h2 class="text-xl md:text-2xl font-semibold text-purple-700 mb-1">
+        SETUP + OPERACIÓN DE RECEPCIONISTA IA (WHATSAPP)
+      </h2>
+      <p class="text-base text-slate-600 italic">Automatización de prospección y recepción con IA | White Label para Agencias de Marketing</p>
+    </section>
+
+    <!-- Resultados -->
+    <section class="bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl p-6 shadow-2xl text-white">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4 flex items-center gap-3">
+        <i data-lucide="trending-up" class="w-6 h-6"></i>
+        RESULTADOS 
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-4">
+        <article class="bg-white/20 backdrop-blur rounded-xl p-4 card-hover">
+          <div class="flex items-start gap-3">
+            <i data-lucide="zap" class="w-6 h-6 flex-shrink-0 mt-1"></i>
+            <div>
+              <h3 class="font-bold text-lg mb-1">Alcance Mensual Automático (Nivel País)</h3>
+              <p class="text-sm text-white/90">Difusión masiva de tu propuesta de trabajo con respuesta automática inteligente.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white/20 backdrop-blur rounded-xl p-4 card-hover">
+          <div class="flex items-start gap-3">
+            <i data-lucide="calendar" class="w-6 h-6 flex-shrink-0 mt-1"></i>
+            <div>
+              <h3 class="font-bold text-lg mb-1">Agenda Llena</h3>
+              <p class="text-sm text-white/90">El agente agenda reuniones directamente por WhatsApp con interesados reales.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white/20 backdrop-blur rounded-xl p-4 card-hover">
+          <div class="flex items-start gap-3">
+            <i data-lucide="brain" class="w-6 h-6 flex-shrink-0 mt-1"></i>
+            <div>
+              <h3 class="font-bold text-lg mb-1">Filtro Inteligente</h3>
+              <p class="text-sm text-white/90">Clasifica, detecta intención real y elimina curiosos o no aptos.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white/20 backdrop-blur rounded-xl p-4 card-hover">
+          <div class="flex items-start gap-3">
+            <i data-lucide="clock" class="w-6 h-6 flex-shrink-0 mt-1"></i>
+            <div>
+              <h3 class="font-bold text-lg mb-1">Operación 24/7</h3>
+              <p class="text-sm text-white/90">Nunca se toma descanso — responde incluso mientras vos y tu equipo duermen.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white/20 backdrop-blur rounded-xl p-4 card-hover">
+          <div class="flex items-start gap-3">
+            <i data-lucide="check" class="w-6 h-6 flex-shrink-0 mt-1"></i>
+            <div>
+              <h3 class="font-bold text-lg mb-1">Alerta de interesados y brinda contacto</h3>
+              <p class="text-sm text-white/90">Reduce 5 horas de trabajo diario manual de SDRs, Setters, Recepcionistas y Personal de soporte.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white/20 backdrop-blur rounded-xl p-4 card-hover">
+          <div class="flex items-start gap-3">
+            <i data-lucide="bar-chart" class="w-6 h-6 flex-shrink-0 mt-1"></i>
+            <div>
+              <h3 class="font-bold text-lg mb-1">Reportes Semanales</h3>
+              <p class="text-sm text-white/90">Registros reales del rendimiento: leads, interesados y conversaciones clasificadas.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white/20 backdrop-blur rounded-xl p-4 card-hover">
+          <div class="flex items-start gap-3">
+            <i data-lucide="settings" class="w-6 h-6 flex-shrink-0 mt-1"></i>
+            <div>
+              <h3 class="font-bold text-lg mb-1">Equipo Técnico Incluido</h3>
+              <p class="text-sm text-white/90">Vos vendés; nosotros desarrollamos, mantenemos y mejoramos constantemente.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white/20 backdrop-blur rounded-xl p-4 card-hover">
+          <div class="flex items-start gap-3">
+            <i data-lucide="brain" class="w-6 h-6 flex-shrink-0 mt-1"></i>
+            <div>
+              <h3 class="font-bold text-lg mb-1">Customización 100% Adaptada</h3>
+              <p class="text-sm text-white/90">Prompts, lógica y comportamiento ajustado a la empresa o proceso de tu cliente.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Descripción General -->
+    <section class="bg-white/95 backdrop-blur rounded-2xl p-6 shadow-2xl">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">DESCRIPCIÓN GENERAL</h2>
+
+      <p class="text-base text-slate-700 mb-4">
+        Nuestro equipo provee un <strong>Recepcionista IA 24/7 para WhatsApp</strong>, ideal para empresas que necesitan:
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-3 mb-5">
+        <div class="flex items-center gap-2 text-slate-700"><i data-lucide="check" class="w-5 h-5 text-green-600"></i><span>Responder leads automáticamente</span></div>
+        <div class="flex items-center gap-2 text-slate-700"><i data-lucide="check" class="w-5 h-5 text-green-600"></i><span>Filtrar consultas reales</span></div>
+        <div class="flex items-center gap-2 text-slate-700"><i data-lucide="check" class="w-5 h-5 text-green-600"></i><span>Agendar reuniones</span></div>
+        <div class="flex items-center gap-2 text-slate-700"><i data-lucide="check" class="w-5 h-5 text-green-600"></i><span>Manejar candidatos y procesos de RRHH</span></div>
+        <div class="flex items-center gap-2 text-slate-700"><i data-lucide="check" class="w-5 h-5 text-green-600"></i><span>Hacer difusión masiva de propuestas</span></div>
+        <div class="flex items-center gap-2 text-slate-700"><i data-lucide="check" class="w-5 h-5 text-green-600"></i><span>Soportar atención sin personal humano</span></div>
+        <div class="flex items-center gap-2 text-slate-700"><i data-lucide="check" class="w-5 h-5 text-green-600"></i><span>Operar de forma estable y predecible</span></div>
+      </div>
+
+      <div class="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
+        <p class="text-slate-800">
+          <strong>Garantizamos los resultados de nuestra tecnología.</strong> Toda la infraestructura corre en un VPS administrado por nosotros, 
+          para garantizar: Estabilidad, Monitoreo, Mantenimiento, Mejoras continuas y Personalización constante.
+        </p>
+      </div>
+    </section>
+
+    <!-- Setup Inicial -->
+    <section class="bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-6 shadow-2xl text-white">
+      <h2 class="text-2xl md:text-3xl font-bold mb-2">SETUP INICIAL (1 MES)</h2>
+      <p class="text-base mb-4 text-blue-100">Todo lo necesario para que el agente IA funcione en 30 días.</p>
+
+      <div class="space-y-4">
+
+        <div class="bg-white/10 backdrop-blur rounded-xl p-4">
+          <h3 class="text-xl font-bold mb-2">1. Configuración del VPS</h3>
+          <ul class="space-y-2 list-none">
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 flex-shrink-0"></i><span>Instalación completa del entorno</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 flex-shrink-0"></i><span>Despliegue de scripts</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 flex-shrink-0"></i><span>Gestión de sesiones de WhatsApp Web</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 flex-shrink-0"></i><span>Seguridad, backup y monitoreo</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 flex-shrink-0"></i><span>Supervisión para evitar caídas</span></li>
+          </ul>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur rounded-xl p-4">
+          <h3 class="text-xl font-bold mb-2">2. Recepcionista IA Personalizado</h3>
+          <p class="mb-2">El agente IA se construye desde cero con:</p>
+          <ul class="space-y-2 list-none">
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5"></i><span>Ingeniería de System Prompt</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5"></i><span>Lógica de segmentación por intención</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5"></i><span>Flujo conversacional diseñado para el negocio</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5"></i><span>Manejo de objeciones</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5"></i><span>Follow-up automático</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5"></i><span>Integración con Calendly / agenda / email</span></li>
+          </ul>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur rounded-xl p-4">
+          <h3 class="text-xl font-bold mb-2">3. Base de Datos Interna</h3>
+          <p class="mb-2">Incluye:</p>
+          <ul class="space-y-2 list-none">
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5"></i><span>Registro de leads</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5"></i><span>Registro de interesados</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5"></i><span>Log de conversaciones</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5"></i><span>Historial para mejoras</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5"></i><span>Acceso a reportes semanales</span></li>
+          </ul>
+          <p class="text-sm text-blue-100 mt-2 italic">(Administrado 100% por nuestro equipo, sin dashboard público.)</p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur rounded-xl p-4">
+          <h3 class="text-xl font-bold mb-2">4. Automatización de Difusión (Opcional)</h3>
+          <p class="mb-2">Puede configurarse para:</p>
+          <ul class="space-y-2 list-none">
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5"></i><span>Ofrecer propuestas de trabajo</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5"></i><span>Distribuir campañas comerciales</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5"></i><span>Hacer difusión masiva segmentada</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5"></i><span>Responder y convertir sin intervención humana</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Operación Mensual -->
+    <section class="bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl p-6 shadow-2xl text-white">
+      <h2 class="text-2xl md:text-3xl font-bold mb-2">OPERACIÓN MENSUAL (SERVICIO CONTINUO)</h2>
+      <p class="text-base mb-4">La agencia vende. Nosotros operamos y mantenemos todo.</p>
+
+      <div class="grid md:grid-cols-2 gap-3">
+        <div class="flex items-center gap-2 bg-white/10 backdrop-blur rounded-lg p-3"><i data-lucide="check" class="w-5 h-5"></i><span>Mantenimiento diario del VPS</span></div>
+        <div class="flex items-center gap-2 bg-white/10 backdrop-blur rounded-lg p-3"><i data-lucide="check" class="w-5 h-5"></i><span>Actualizaciones de IA y WhatsApp Web</span></div>
+        <div class="flex items-center gap-2 bg-white/10 backdrop-blur rounded-lg p-3"><i data-lucide="check" class="w-5 h-5"></i><span>Monitoreo activo de fallos + reinicios automáticos</span></div>
+        <div class="flex items-center gap-2 bg-white/10 backdrop-blur rounded-lg p-3"><i data-lucide="check" class="w-5 h-5"></i><span>Ajuste continuo del system prompt</span></div>
+        <div class="flex items-center gap-2 bg-white/10 backdrop-blur rounded-lg p-3"><i data-lucide="check" class="w-5 h-5"></i><span>Nuevas respuestas personalizadas</span></div>
+        <div class="flex items-center gap-2 bg-white/10 backdrop-blur rounded-lg p-3"><i data-lucide="check" class="w-5 h-5"></i><span>Desarrollo lógico continuo</span></div>
+        <div class="flex items-center gap-2 bg-white/10 backdrop-blur rounded-lg p-3"><i data-lucide="check" class="w-5 h-5"></i><span>Consultoría técnica</span></div>
+        <div class="flex items-center gap-2 bg-white/10 backdrop-blur rounded-lg p-3"><i data-lucide="check" class="w-5 h-5"></i><span>Reportes semanales</span></div>
+        <div class="flex items-center gap-2 bg-white/10 backdrop-blur rounded-lg p-3"><i data-lucide="check" class="w-5 h-5"></i><span>Soporte prioritario</span></div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="bg-white/95 backdrop-blur rounded-2xl p-6 shadow-2xl">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">BENEFICIOS PARA CLIENTES FINALES</h2>
+
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="flex items-center gap-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-4 border border-green-200">
+          <i data-lucide="check" class="w-6 h-6 text-green-600"></i><span class="text-slate-800 font-medium">El sistema trabaja solo 24/7</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-4 border border-green-200">
+          <i data-lucide="check" class="w-6 h-6 text-green-600"></i><span class="text-slate-800 font-medium">Les llena la agenda con interesados</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-4 border border-green-200">
+          <i data-lucide="check" class="w-6 h-6 text-green-600"></i><span class="text-slate-800 font-medium">Filtra automáticamente personas no aptas</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-4 border border-green-200">
+          <i data-lucide="check" class="w-6 h-6 text-green-600"></i><span class="text-slate-800 font-medium">Reduce costos de SDR/soporte</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-4 border border-green-200">
+          <i data-lucide="check" class="w-6 h-6 text-green-600"></i><span class="text-slate-800 font-medium">Aumenta la velocidad de respuesta</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-4 border border-green-200">
+          <i data-lucide="check" class="w-6 h-6 text-green-600"></i><span class="text-slate-800 font-medium">Mejora la conversión</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-4 border border-green-200">
+          <i data-lucide="check" class="w-6 h-6 text-green-600"></i><span class="text-slate-800 font-medium">Deja todo registrado</span>
+        </div>
+        <div class="flex items-center gap-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-4 border border-green-200">
+          <i data-lucide="check" class="w-6 h-6 text-green-600"></i><span class="text-slate-800 font-medium">Escala sin contratar más personal</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 rounded-2xl p-4 shadow-2xl text-center">
+      <p class="text-white text-lg"><strong>¿Listo para transformar la operación de tus clientes?</strong></p>
+      <p class="text-slate-300 mt-2">Contactanos para comenzar el setup de tu primer cliente.</p>
+	  <p class="text-slate-300 mt-2">Tel. +5493513441882 Sebastián Bocek | Ignacio Ochoa +5491168310888</p>
+    </footer>
+
+  </div>
+
+  <!-- Inicializar lucide -->
+  <script>
+    // Reemplaza los <i data-lucide="..."> por SVGs
+    if (window.lucide && typeof window.lucide.replace === 'function') {
+      window.lucide.replace({ 'stroke-width': 1.5 });
+    }
+  </script>
+
+
+</body></html>
